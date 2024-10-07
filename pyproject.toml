@@ -1,0 +1,16 @@
+[project]
+name = "sj-trading"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "shioaji>=1.2.5",
+]
+
+[project.scripts]
+hello = "sj_trading:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
