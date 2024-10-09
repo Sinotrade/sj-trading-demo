@@ -10,6 +10,10 @@ def hello() -> None:
     print("Hello from sj-trading!")
 
 
+def show_version() -> str:
+    print(f"Shioaji Version: {sj.__version__}")
+    return sj.__version__
+
 def get_shioaji_client() -> sj.Shioaji:
     api = sj.Shioaji()
     print("Shioaji API created")
