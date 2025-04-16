@@ -15,8 +15,6 @@ def testing_stock_ordering():
     accounts = api.login(
         api_key=os.environ["API_KEY"],
         secret_key=os.environ["SECRET_KEY"],
-        ca_cert_path=os.environ["CA_CERT_PATH"],
-        ca_password=os.environ["CA_PASSWORD"],
     )
     # 顯示所有可用的帳戶
     print(f"Available accounts: {accounts}")
@@ -56,8 +54,6 @@ def testing_futures_ordering():
     accounts = api.login(
         api_key=os.environ["API_KEY"],
         secret_key=os.environ["SECRET_KEY"],
-        ca_cert_path=os.environ["CA_CERT_PATH"],
-        ca_password=os.environ["CA_PASSWORD"],
     )
     # 顯示所有可用的帳戶
     print(f"Available accounts: {accounts}")
